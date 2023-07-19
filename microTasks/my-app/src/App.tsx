@@ -70,29 +70,30 @@ function App() {
     return (
         <div className="App">
             {/*Components*/}
+            <p>=====================================================================================</p>
             <Header title={'NEW FOOTER'}/>
             <Body titleForBody={'NEW BODY'}/>
             <Footer/>
             <NewComponent/>
+
             {/*Button*/}
+            <p>=====================================================================================</p>
             <Button name={'MyYouTubeChanel-1'} callBack={() => Button1Foo('Button 1', 21)}/>
             <Button name={'MyYouTubeChanel-2'} callBack={() => Button2Foo('Button 2', 22)}/>
             <Button name={'Stupid Button'} callBack={() => Button3Foo('I\'m stupid button')}/>
+
             {/*useState*/}
+            <p>=====================================================================================</p>
             <h1>{a}</h1>
             <button onClick={onClickHandler}>PlusPlus</button>
             <button onClick={onClickZero}>0</button>
+
             {/*Filter*/}
+            <p>=====================================================================================</p>
             <MoneyFilter money={money}/>
+
             {/*Input*/}
-            {/*<Fullinput addToMessage={addToMessage}/>*/}
-            {/*{message.map((el:InputType,index)=>{*/}
-            {/*    return(*/}
-            {/*        <div key={index}>*/}
-            {/*            {el.message}*/}
-            {/*        </div>*/}
-            {/*    )*/}
-            {/*})}*/}
+            <p>=====================================================================================</p>
             <Input title={title} setTitle={setTitle}/>
             <ButtonInput callBack={callBackButtonHandler} name={"+"} />
             {message.map((el:InputType,index)=>{
@@ -102,6 +103,7 @@ function App() {
                     </div>
                 )
             })}
+            <p>=====================================================================================</p>
 
         </div>
     );
